@@ -1,8 +1,18 @@
 doctype html
 html
   head
-    block title
     title= main_title
     link(rel='stylesheet', href='/stylesheets/style.css')
+
+    p.membership
+      a(href='/') Home
+      |  |
+      a(href='member') I am a Member
+      |  |
+      a(href='non_member') Sign Up to be a Member
+
   body
+    h1= main_title
+    p We keep your body healhty and leave your pockets wealthy
+
     block content
