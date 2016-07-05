@@ -1,11 +1,14 @@
 var express = require('express');
 var router = express.Router();
+var request = require('request');
+
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res, next)
+{
   res.render('index',
       {
-        main_title: "Bill I Am's Supermarket"
+          jade_title: "Bill I Am Weather Report"
       }
   );
 });

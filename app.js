@@ -6,8 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var member = require('./routes/member');
-var non_member = require('./routes/non_member.js')
+var my_town = require('./routes/my_town');
+var hourly_weather = require('./routes/hourly_weather.js');
 
 var app = express();
 
@@ -23,9 +23,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// app.use('jade file name','folder route');
 app.use('/', routes);
-app.use('/member', member);
-app.use('/non_member', non_member);
+app.use('/my_town', my_town);
+app.use('/hourly_weather', hourly_weather);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,6 +1,6 @@
 body
 {
-    background: url("../images/main-background.jpg") fixed no-repeat;
+    background: antiquewhite fixed no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     padding: 50px;
@@ -16,7 +16,7 @@ h1
     text-shadow:-4px 0 maroon, 0 1px black, 1px 0 black, 0 -1px black;
     padding: 15px;
     border-radius: 25px;
-    background: url("../images/header-background.jpg");
+    background-color: burlywood;
     margin: 20px;
 }
 
@@ -32,13 +32,13 @@ a
     color: #00B7FF;
 }
 
-p.membership
+p.menu_panel
 {
     position: fixed;
     top: 0;
     right: 0;
     margin-right: 30px;
-    background: url("../images/header-background.jpg");
+    background-color: burlywood;
     padding: 10px;
     border-radius: 25px;
     font-weight: 900;
