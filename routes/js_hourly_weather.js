@@ -12,7 +12,7 @@ var request = require('request');
 router.get('/', function(req, res, next)
 {
     /* res.render('jade file', json data for jade file) */
-    res.render('hourly_weather',
+    res.render('jade_hourly_weather',
         {
             jade_title: "Bill I Am Weather Report"
         });

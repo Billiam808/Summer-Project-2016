@@ -6,7 +6,7 @@ var request = require('request');
 /* GET home page. */
 router.get('/', function(req, res, next)
 {
-  res.render('index',
+  res.render('jade_index',
       {
           jade_title: "Bill I Am Weather Report"
       }

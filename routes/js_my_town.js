@@ -14,11 +14,12 @@ var state;
 router.get('/', function(req, res, next)
 {
     /* res.render('jade file', json data for jade file) */
-    res.render('my_town',
+    res.render('jade_my_town',
         {
-            main_title: "Bill I Am Weather Report"
+            jade_title: "Bill I Am Weather Report"
         });
 });
+
 
 router.post('/', function (req, res){
     var zip = req.body.zip_code;
@@ -37,7 +38,7 @@ router.post('/', function (req, res){
             state =result.ForecastReturn.State;
         });
 
-        res.render('my_town',
+        res.render('jade_my_town_post',
             {
                 jade_title: "Bill I Am Weather Report",
                 jade_city: city,

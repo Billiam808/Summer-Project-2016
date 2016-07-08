@@ -1,0 +1,10 @@
+//
+   Created by BillJoshua on 6/30/2016.
+
+extends jade_layout
+block content
+    span Please enter ZIP code
+    // action='jade file name that will be used'
+    form(name='request_weather', action='jade_my_town_post', method='post')
+        input(type='text', name='zip_code')
+        input(type='submit', value='login')
