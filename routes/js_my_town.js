@@ -33,7 +33,7 @@ router.post('/', function (req, res){
         }
 
         /*get data from weather web service*/
-        parseString(body, function(err, result){
+        parseString(body, function(error, result){
             city = result.ForecastReturn.City;
             state =result.ForecastReturn.State;
         });
