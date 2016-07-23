@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/js_index');
 var js_my_town = require('./routes/js_my_town');
-var js_hourly_weather = require('./routes/js_hourly_weather.js');
+var js_hourly_weather = require('./routes/js_hourly_weather');
 var js_my_town_post = require('./routes/js_my_town');
 
 var app = express();

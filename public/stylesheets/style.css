@@ -3,21 +3,19 @@ body
     background: antiquewhite fixed no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    padding: 50px;
+    margin: 0;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-h1
+/* sets the style for the title */
+h1.menu_bar
 {
     color: crimson;
-    text-align: center;
-    font-size: 400%;
-    font-weight: 900;
+    float: right;
+    font-size: 150%;
+    font-weight: 800;
+    margin: 10px;
     text-shadow:-4px 0 maroon, 0 1px black, 1px 0 black, 0 -1px black;
-    padding: 15px;
-    border-radius: 25px;
-    background-color: burlywood;
-    margin: 20px;
 }
 
 h3
@@ -32,39 +30,71 @@ a
     color: #00B7FF;
 }
 
-p.menu_panel
+/* css for menu bar */
+ul.menu_bar
 {
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin-right: 30px;
-    background-color: burlywood;
-    padding: 10px;
-    border-radius: 25px;
-    font-weight: 900;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
 }
 
+li.menu_bar
+{
+    /* makes a horizontal menu bar */
+    float: left;
+}
+
+/* all subset of 'a' will have these/this style */
 a
 {
-    color: crimson;
     text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-a:active
+a.menu_bar
 {
-    color: darkred;
-    text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 10px 30px 10px 30px;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 120%;
+    font-weight: 800;
+}
+
+a#active
+{
+    color: crimson;
+    padding: 10px 30px 10px 30px;
+    display: block;
+    text-align: center;
+    font-size: 120%;
+    font-weight: 800;
 }
 
 a:hover
 {
-    color:red;
-    text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: red;
 }
 
-#container.index
+/* style for the first town in index */
+#city1
 {
-    margin: 50px 100px 50px 100px;
+    margin: 0px 100px 50px 100px;
+    padding: 10px 50px 10px 50px;
+    border: 5px solid saddlebrown;
+}
+
+#city2
+{
+    margin: 0px 100px 50px 100px;
+    padding: 10px 50px 10px 50px;
+    border: 5px solid saddlebrown;
+}
+
+#city3
+{
+    margin: 0px 100px 50px 100px;
     padding: 10px 50px 10px 50px;
     border: 5px solid saddlebrown;
 }
@@ -74,4 +104,18 @@ a:hover
     margin: 50px 100px 50px 100px;
     padding: 10px 50px 10px 50px;
     border: 5px solid saddlebrown;
+}
+
+/* sets the style for form */
+form
+{
+    margin: 0px 100px 30px 100px;
+    padding: 40px 30px 100% 30px;
+}
+
+#body_layout
+{
+    background-color: darkgrey;
+    margin: 10px 10% 30px 10%;
+    padding: 0px 50px 100% 50px;
 }

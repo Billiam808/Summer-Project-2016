@@ -5,7 +5,6 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 var url = 'http://wsf.cdyne.com/WeatherWS/Weather.asmx/GetCityForecastByZIP?ZIP=';
-var user = { name: 'John' }
 var parseString = require('xml2js').parseString;
 var city;
 var state;
@@ -16,7 +15,9 @@ router.get('/', function(req, res, next)
     /* res.render('jade file', json data for jade file) */
     res.render('jade_my_town',
         {
-            jade_title: "Bill I Am Weather Report"
+            jade_title: "Bill I Am Weather Report",
+
+            currHead: 'My Town'
         });
 });
 
@@ -42,7 +43,9 @@ router.post('/', function (req, res){
             {
                 jade_title: "Bill I Am Weather Report",
                 jade_city: city,
-                jade_state: state
+                jade_state: state,
+
+                currHead: 'My Town'
             });
 
     });

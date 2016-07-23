@@ -4,13 +4,28 @@ html
     title= jade_title
     link(rel='stylesheet', href='/stylesheets/style.css')
 
-    p.menu_panel
-      a(href='/') Home
-      |  |
-      a(href='jade_my_town') My Town
-      |  |
-      a(href='jade_hourly_weather') Hourly Weather
+    ul.menu_bar
+      h1.menu_bar= jade_title
+
+      li.menu_bar
+        if currHead == 'index'
+          a#active Home
+        else
+          a.menu_bar(href='/') Home
+
+      li.menu_bar
+        if currHead == 'My Town'
+          a#active My Town
+        else
+          a.menu_bar(href='jade_my_town') My Town
+
+      li.menu_bar
+        if currHead == 'Hourly Weather'
+          a#active Hourly Weather
+        else
+          a.menu_bar(href='jade_hourly_weather') Hourly Weather
+
 
   body
-    h1= jade_title
-    block content
+    #body_layout
+      block content
