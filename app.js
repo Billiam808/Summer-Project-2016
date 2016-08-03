@@ -30,6 +30,23 @@ app.use('/jade_my_town', js_my_town);
 app.use('/jade_hourly_weather', js_hourly_weather);
 app.use('/jade_my_town_post', js_my_town_post);
 
+
+/* ******************************************************************************************
+          New Content 7/24/16: AJAX added
+ ******************************************************************************************** */
+
+app.get('/main', function(req, res){
+
+  res.render('jade_main.jade', {
+    jade_title: "Bill I Am Weather Report"
+  });
+});
+
+/* ******************************************************************************************
+          New Content 7/24/16: AJAX added
+ ******************************************************************************************** */
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

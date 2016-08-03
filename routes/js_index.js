@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
-var url = '	http://billadona-test.apigee.net/summer2016';
+var url = 'http://billadona-test.apigee.net/summer2016';
 var proxy_city1;    // will hold the data from the parsed body
 var proxy_state_name1;  // holds the state name that came from the parsed body
 var proxy_zip_code1;    // holds zip code that came from the parsed body from the proxy
